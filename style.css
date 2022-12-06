@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #131518;
+  color: #fff;
+  font-family: "Overpass";
+  
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  width: 412px;
+  height: 416px;  
+
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  border-radius: 30px;  
+
+  display: flex;
+  flex-direction: column; 
+}
+
+.card-1{
+  padding: 32px; 
+}
+
+.card-1__star-container{
+  width: 100%;  
+}
+
+.card-1__star-circle{
+  width: 48px;
+  height: 48px;  
+
+  border-radius: 50%;
+  background: #262E38;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1__star{
+  width: 16px;
+  height: 16px;  
+}
+
+.card-1__primary-text{
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.card-1__secondary-text{
+  margin-top: 7px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #969FAD;
+}
+
+.card-1__rating{
+  margin-top: 24px;
+  justify-content: space-evenly;
+
+  display: flex;
+  gap: 21px;
+}
+
+.rating__option{
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: #262E38;
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #7C8798;
+  cursor: pointer;
+}
+
+.rating__option:hover{
+  background: #7C8798;
+  color: white;
+}
+
+.rating__option--selected{
+  color: white;
+  background: #FC7614;
+}
+
+.card-1__button{
+  margin-top: 32px;
+  max-width: 341px;
+  height: 45px;
+
+  background: #FC7614;
+  border: none;
+  border-radius: 22.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.card-1__button:hover{
+  background: #fff;
+  color: #FC7614;
+}
+
+/* CARD 2 */
+
+.card-2{
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 36px;
+  text-align: center;
+}
+
+.card-1__image{
+  width: 162px;
+  height: 108px;
+}
+
+.card-2__secondary-text{
+  background: #262E38;
+  border-radius: 22.5px;
+
+  width: 193px;  
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #FC7614;
+}
+
+.card-2__primary-text{
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.card-2__tertiary-text{
+  margin-top: -25px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #969FAD;
+}
+
+@media screen and (max-width: 464px){
+  body{
+    padding: 0 24px;
+  }  
+  .card{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px){
+  body{
+    padding: 0 10px;
+  }
+  .rating__option{
+    width: 35px;
+    height: 35px;
+  }
+}
